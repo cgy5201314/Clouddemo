@@ -1,0 +1,16 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: feign
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+#添加熔断机制,需要创建接口实现类，在实现里定义容错处理机制 通过@Component注解将feignerror实例注入ioc
+#  在接口定义通过feignclient注解的fallback属性设置映射，实现降级处理fallback=FeignError.class
+feign:
+  hystrix:
+    enabled: true

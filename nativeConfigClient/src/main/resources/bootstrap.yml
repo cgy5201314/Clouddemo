@@ -1,0 +1,13 @@
+#name-active.yml这个名字与configserver里shared写的配置文件名字一样才可以
+#这里不写端口读取server的端口
+spring:
+  application:
+    name: configclient
+  profiles:
+    active: dev
+#配置文件去configServer里找8762地址，就是套娃到8762->yml->shared->name
+  cloud:
+    config:
+      uri: http://localhost:8762
+#      设置客户端优先判断configserver是否正常
+      fail-fast: true

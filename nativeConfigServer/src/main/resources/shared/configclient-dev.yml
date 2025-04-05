@@ -1,0 +1,4 @@
+server:
+  port: 8070
+#  版本让客户端读取
+foo: foo version 1
