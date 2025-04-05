@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/configClient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configserver/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eurekaClient/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eurekaServer/src/main/java" charset="UTF-8" />

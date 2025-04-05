@@ -1,0 +1,17 @@
+#与远程文件名字对应
+spring:
+  cloud:
+    config:
+      name: configclient
+#      git repository的分支master
+      label: master
+#      是否开启配置发现服务，找不找？
+      discovery:
+        enabled: true
+#        配置中心在注册中心的名字
+        service-id: configserver
+#      注册中心地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
